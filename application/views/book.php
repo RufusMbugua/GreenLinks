@@ -82,13 +82,19 @@
 					Current Location
 				</button>
 				<input type="text" name ="destination" placeholder="Choose a destination"/>
-				
+				<div class="message yes">
+					Taxi Available
+				</div>
+				<div class="message no">
+					Taxi Unavailable
+				</div>
+				<button>
+					Book
+				</button>
 			</form>
 			<div id="map_canvas"></div>
 		</section>
-		<section class="cart">
-			<h2>Cart</h2>
-		</section>
+		
 	</body>
 
 </html>

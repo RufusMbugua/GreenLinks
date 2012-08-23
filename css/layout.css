@@ -1,10 +1,10 @@
 @import url('fonts.css');
 
 body {
-	background-image: url('../images/myIdentity.jpg');
 	width: 100%;
 	margin: auto;
 	overflow: hidden;
+	background-image: url('../images/green_back.jpg');
 }
 header {
 	height: 150px;
@@ -15,17 +15,20 @@ header {
 	width: 100%;
 }
 nav {
-	box-shadow: 0 0.5px 1px 0.6px #000;
-	-moz-box-shadow: 0 0.5px 6px 1px #000;
-	-webkit-box-shadow: 0 1px 5px 0.5px #000;
-	-o-box-shadow: 0 0.5px 1px 0.6px #000;
-	width: 100%;
+	margin: auto;
+	width: 70%;
 	height: 30%;
-	background-image: url('../images/back.jpg');
+	color: black;
+	padding: 1em;
+}
+
+nav a {
+	color: black;
+}
+nav a:hover {
+	color: white;
 }
 .user {
-	position: absolute;
-	right: -10px;
 	float: right;
 	width: 20%;
 	height: 50px;
@@ -39,7 +42,6 @@ nav {
 	margin-left: 10px;
 }
 footer {
-	position: absolute;
 	bottom: 0;
 	height: 20%;
 	width: 100%;
@@ -49,25 +51,24 @@ footer {
 }
 .content {
 	margin: auto;
-	margin-top: 40px;
-	margin-left: 10%;
+	margin-top: 2em;
+	margin-bottom: 2em;
 	background-image: url('../images/back.jpg');
 	height: 50%;
 	width: 70%;
+	padding: 1.5em;
 	border-radius: 5px;
 	box-shadow: 0 0.5px 1px 0.6px #000;
 	-moz-box-shadow: 0 0.5px 6px 1px #000;
 	-webkit-box-shadow: 0 1px 5px 0 #000;
 	-o-box-shadow: 0 0.5px 1px 0.6px #000;
-	display: inline-block;
 }
 .content form {
 	margin: auto;
 	width: 40%;
-	margin-top: 2em;
 	display: inline-block;
-	border: 1px solid black;
-	margin-left: 5%;
+	
+	padding:1%;
 }
 .content form input {
 	display: block;
@@ -75,19 +76,29 @@ footer {
 nav a {
 	margin-top: 10px;
 	font-size: 20px;
-	font-family: Imperator;
-	/*text-shadow: 0.5px 0.7px 1px #858585;
-	 -webkit-text-shadow: 0.5px 0.7px 1px #858585;
-	 -moz-text-shadow: 0.5px 0.7px 1px #858585;
-	 filter: dropshadow(color=#858585, offx=0.5, offy=0.7);*/
+	font-family: Tangerine Regular;
+	text-decoration: none;
+	text-shadow: 0px -1px 1px #666;
+filter: dropshadow(color=#ccc, offx=0, offy=-1);
+
 }
+.logo{
+	float:left;
+}
+.logo img{
+}
+/**
+ * Listing	
+ * 
+ * 
+ */
 ul, li {
 	list-style: none;
 	right: 0;
 	padding: 0 0 0 10px;
 }
 ul {
-	text-align: center;
+	text-align: left;
 }
 ul li {
 	display: inline-block;
@@ -131,12 +142,56 @@ ul li.last {
 
 input[type=text] {
 	padding: 0.625em;
+	width:70%;
+	margin-bottom:1em;
 }
 #map_canvas {
 	display: inline-block;
 	width: 50%;
-	height: 70%;
+	height: 100%;
 	float: right;
-	border: 1px solid black;
-	margin-top: 0.625em;
+	border: 2px solid #999;
+}
+
+/**
+ * 	Messages
+ *
+ */
+
+.message {
+	width: 40%;
+	height: 5%;
+	border-radius: 3px;
+	padding: 1.2%;
+}
+
+.yes {
+	background-image: linear-gradient(bottom, #1CCC08 37%, #47D934 69%);
+	background-image: -o-linear-gradient(bottom, #1CCC08 37%, #47D934 69%);
+	background-image: -moz-linear-gradient(bottom, #1CCC08 37%, #47D934 69%);
+	background-image: -webkit-linear-gradient(bottom, #1CCC08 37%, #47D934 69%);
+	background-image: -ms-linear-gradient(bottom, #1CCC08 37%, #47D934 69%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.37, #1CCC08),
+	color-stop(0.69, #47D934)
+	);
+	border: 1px solid green;
+}
+.no {
+	background-image: linear-gradient(bottom, #B51010 37%, #D64242 69%);
+	background-image: -o-linear-gradient(bottom, #B51010 37%, #D64242 69%);
+	background-image: -moz-linear-gradient(bottom, #B51010 37%, #D64242 69%);
+	background-image: -webkit-linear-gradient(bottom, #B51010 37%, #D64242 69%);
+	background-image: -ms-linear-gradient(bottom, #B51010 37%, #D64242 69%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.37, #B51010),
+	color-stop(0.69, #D64242)
+	);
+	border: 1px solid #990000;
 }

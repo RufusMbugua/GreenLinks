@@ -24,6 +24,12 @@ class C_Front extends CI_Controller {
 		$this -> load -> view('book', $data);
 	}//End of index file
 	
-
+	public function clients() {
+		$data['title'] = 'Our Clients';
+		$data['content'] = "<p>Green Cab</p>";
+		$this -> load -> view('clients', $data);
+	}//End of index file
+	
+	
 }
 ?>

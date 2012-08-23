@@ -41,6 +41,12 @@
 $route['default_controller'] = "c_front";
 $route['404_override'] = '';
 
+/*
+ * Custom Routes
+ * */
+$route['book'] = "c_front/book";
+$route['clients'] = "c_front/clients";
+
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
